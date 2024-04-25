@@ -78,7 +78,7 @@ function userGuess() {
 
     feedback.textContent = 'Correct Number';
     mysteryNumber.textContent = randomNumber;
-    document.body.style.background = 'green';
+    document.body.style.backgroundColor = 'rgb(62 133 133)';
     return;
   }
 
