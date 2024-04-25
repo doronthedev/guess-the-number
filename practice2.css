@@ -1,0 +1,144 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: #1f1f1f;
+  color: #ffffff;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.random-number-range {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+
+  font-size: 2rem;
+}
+
+.random-number-range .range {
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.play-again {
+  position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: italic;
+
+  top: 1rem;
+  left: 1rem;
+  padding: 0.6rem 2rem;
+}
+
+.game-header {
+  text-align: center;
+
+  font-size: 4rem;
+  margin: 8rem auto;
+}
+
+.line {
+  position: absolute;
+  background-color: #fff;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.mystery-number {
+  position: relative;
+  margin: -5rem auto;
+  background-color: #fff;
+  text-align: center;
+  color: #1f1f1f;
+
+  font-size: 10rem;
+  height: 12rem;
+  width: 12rem;
+}
+
+.data {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 4rem;
+  top: 30rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.data * {
+  margin-bottom: 1rem;
+}
+
+.feedback {
+  margin-bottom: 4rem;
+}
+
+.user-guess {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 8rem;
+  top: 30rem;
+}
+
+.user-guess input {
+  height: 14rem;
+  width: 14rem;
+  border: 4px solid #fff;
+  background: none;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 6rem;
+}
+
+.user-guess button {
+  border-radius: 1rem;
+  min-height: 4rem;
+  max-height: 8rem;
+  width: 14rem;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+
+  background: #fff;
+  border: none;
+}
+
+.user-guess button:hover {
+  background: #e9e7e7;
+}
+
+.user-guess button:active {
+  background: #cbcbcb;
+}
+
+@media (width <= 500px) {
+  html {
+    font-size: 8px;
+  }
+
+  .data {
+    right: 1rem;
+  }
+
+  .user-guess {
+    left: 1rem;
+  }
+}

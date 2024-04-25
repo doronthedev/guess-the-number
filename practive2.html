@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="practice2.js" defer></script>
+    <link rel="stylesheet" href="practice2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="random-number-range">
+      <span class="lower-range range"><</span>
+      <span class="range-display">Between 1 and 20</span>
+      <span class="upper-range range">></span>
+    </div>
+
+    <button class="play-again">Again!</button>
+    <h1 class="game-header">Guess My Number!</h1>
+
+    <div class="line"></div>
+    <div class="mystery-number">?</div>
+
+    <div class="data">
+      <span class="feedback">Start guessing...</span>
+      <span class="score">Score: 20</span>
+      <span class="highscore">Highscore: 0</span>
+    </div>
+
+    <div class="user-guess">
+      <input type="number" min="1" max="20" value="1" />
+      <button class="submit-guess">Check!</button>
+      <button class="start-game">Roll Number!</button>
+    </div>
+  </body>
+</html>
