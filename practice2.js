@@ -63,7 +63,7 @@ function userGuess() {
   if (!isPlay) return;
 
   guess = Number(guessElement.value);
-
+  console.log(randomNumber);
   if (guess < 1 || guess > range) {
     guessElement.value = 1;
     guess = 1;
