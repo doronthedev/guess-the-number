@@ -14,6 +14,7 @@ const highscoreDisplay = document.querySelector('.highscore');
 
 document.querySelector('.lower-range').addEventListener('click', decreaseRange);
 document.querySelector('.upper-range').addEventListener('click', increaseRange);
+document.querySelector('.range-display').addEventListener('click', resetRange);
 document.querySelector('.start-game').addEventListener('click', game);
 document.querySelector('.submit-guess').addEventListener('click', userGuess);
 document.querySelector('.play-again').addEventListener('click', resetGame);
@@ -32,6 +33,14 @@ function decreaseRange() {
   if (range <= 10) return;
 
   range--;
+  rangeDisplay.textContent = `Between 1 and ${range}`;
+  guessElement.max = range;
+}
+
+function resetRange() {
+  if (isPlay) return;
+
+  range = 20;
   rangeDisplay.textContent = `Between 1 and ${range}`;
   guessElement.max = range;
 }
